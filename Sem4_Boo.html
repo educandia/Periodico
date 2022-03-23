@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Clase4</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <style>
+
+
+  .bg-1 { 
+    background-color: #1abc9c; /* Green */
+    color: #ffffff;
+  }
+  .bg-2 { 
+    background-color: #474e5d; /* Dark Blue */
+    color: #ffffff;
+  }
+  .bg-3 { 
+    background-color: #fff; /* White */
+    color: #555555;
+  }
+  .bg-4 { 
+    background-color: #2f2f2f;
+    color: #fff;
+  }
+    .container-fluid { /*agrega tamaño contenedores de colores */
+    padding-top: 50px;
+    padding-bottom: 50px; 
+  }
+   .navbar { /*--estilo barra navegador*/
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 4px;
+	border-color: transparent;
+    background-color: #f4511e;
+ }
+  .jumbotron { /*--estilo color naranja--*/
+    background-color: #7676AD;
+    color: #222232;
+  }
+  .carousel-control.right, .carousel-control.left { /*--estilo banner--*/
+  background-image: none;
+  color: #7676AD;
+}
+.carousel-indicators li {
+  border-color: #7676AD;
+}
+.carousel-indicators li.active {
+  background-color: #7676AD;
+}
+
+.item h4 {
+  font-size: 19px;
+  line-height: 1.375em;
+  font-weight: 400;
+  font-style: italic;
+  margin: 70px 0;
+}
+
+.item span {
+  font-style: normal;
+}
+button{ /*--estilo mi boton-->*/
+  border-radius: 10px;
+  background-color: #333;
+  color: #fff;
+  margin: 5px;
+}
+  </style>
+  <script language="javascript" type="text/javascript">
+function enviar(pagina){
+document.nombreDelFormulario.action = pagina;
+document.nombreDelFormulario.submit();
+}
+</script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Bienvenidos al periodico de la ciudad</h1>
+  <p>Ahora prueba en otro tamaño de pantalla para ver cambio</p> 
+</div>
+
+<!--agrega menu-->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="Sem4_Boo.html">Menú principal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right"> 
+        <li><a href="boton.html">Lecturas</a></li>
+        <li><a href="#">Documentos</a></li>
+        <li><a href="#">Fotografías</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<div class="container-fluid bg-1 text-center">
+  <h3>Esculturas famosas</h3>
+  <img src="bird.jpg" alt="Bird" width="200" height="200">
+  <img src="bird.jpg" class="img-circle" alt="Bird">  <!--imagen circulo-->
+  <h3>Soy muy famoso</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3>Les hablaré de mi</h3>
+  <p>Fui esculpido por primera.</p>
+  <button onclick="location.href='https://www.facebook.com'">Llévame a otro lado</button>
+  <a href="https://www.google.com" target="_blank">Mi boton</a>
+	<form name="nombreDelFormulario" action="" method="post"> <!--botón-->
+	<!--<input type="button" value="Profundiza en esta página" onClick="enviar('boton.html')">-->
+</form>
+</div>
+
+
+
+<div class="container-fluid bg-3 text-center">    <!--información con las tres imagenes-->
+  <h3>Estas son algunas de mis obras famosas</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Este es uno de mis mejores trabajos y quiero que leas un poco mas de ello.</p>
+	  <img src="bird1.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Este es uno de mis mejores trabajos y quiero que leas un poco mas de ello.</p>
+      <img src="bird2.jpg" alt="Image" width="200" height="200">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Este es uno de mis mejores trabajos y quiero que leas un poco mas de ello.</p>
+      <img src="bird3.jpg" alt="Image" width="200" height="200">
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Información</h3>
+      <p>Las ideas que comunica un texto están contenidas en lo 
+        que se suele denominar «macroproposiciones», unidades estructurales de nivel superior o global,
+         que otorgan coherencia al texto constituyendo su hilo central, el esqueleto estructural 
+         que cohesiona elementos lingüísticos formales de alto nivel,
+          como los títulos y subtítulos, la secuencia de párrafos, etc.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Deportes</h3>
+      <p>El nivel microestructural o local está asociado con el concepto de cohesión.
+         Se refiere a uno de los fenómenos propios de la coherencia, 
+         el de las relaciones particulares y locales que se dan entre elementos lingüísticos,
+          tanto los que remiten unos a otros como los que
+           tienen la función de conectar y organizar.</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Entretenimiento</h3>        
+      <p>Se le llama texto a la configuración de lengua o habla y se utilizan signos específicos
+         (signo de la lengua o habla) y está organizada según
+          reglas del habla o idioma.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<h3>Tenemos otra información</h3>
+  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h4>"Es mi primer producto"<br><span>otra vez</span></h4>
+      </div>
+      <div class="item">
+        <h4>"Me gusta crear"<br><span>Mucha información</span></h4>
+      </div>
+      <div class="item">
+        <h4>"creando estoy"<br><span>en mi clase</span></h4>
+      </div>
+      <div class="item">
+        <h4>"soy una prueba"<br><span>prueba</span></h4>
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Regresa</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</div>
+
+
+
+<!--Pié de página-->
+<footer class="container-fluid bg-4 text-center">
+  <p>Puedes conocer mas acá <a href="https://www.google.com">Información de Google</a></p> 
+</footer>
+
+</body>
+</html>
+
